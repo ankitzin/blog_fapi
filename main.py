@@ -7,9 +7,4 @@ app = FastAPI()
 app.include_router(blog_route.router)
 
 
-@app.get("/")
-def home():
-    return {"data": "Hello Home!"}
-
-
 post.Base.metadata.create_all(engine)
